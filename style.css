@@ -1,0 +1,51 @@
+.page-heading {
+    font-size: 4em;
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: marquee 20s linear infinite; /* Apply animation to h1 only */
+  }
+  
+  /* Define the marquee animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* End off-screen to the left */
+    }
+  }
+  
+  
+
+.content {
+    width: 93vw;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    padding: 1em;
+    text-align: justify;
+    text-indent: 2em;
+    color: darkblue;
+    font-family: 'Verdana', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    background-color: lightsteelblue;
+    
+}
+#artwork-container {
+    width: 75vw;
+    margin: 0 auto;
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.album-art {
+    box-sizing: border-box;
+    width: 400px;
+    height: auto;
+    border: 3px dotted blue;
+    background-color: aqua;
+    padding: 1em;
+    margin: 2em;
+
+}
